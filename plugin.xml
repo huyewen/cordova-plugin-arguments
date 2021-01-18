@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="hoyivn_20210118" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>cordova-plugin-arguments</name>
+    <js-module name="cordova-plugin-arguments" src="www/cordova-plugin-arguments.js">
+        <clobbers target="cordova.plugins.cordova-plugin-arguments" />
+    </js-module>
+</plugin>
