@@ -1,7 +1,13 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin id="hoyivn_20210118" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>cordova-plugin-arguments</name>
-    <js-module name="cordova-plugin-arguments" src="www/cordova-plugin-arguments.js">
-        <clobbers target="cordova.plugins.cordova-plugin-arguments" />
-    </js-module>
+  <name>cordova-plugin-arguments</name>
+  <js-module name="Arguments" src="www/Arguments.js">
+    <!-- cordova.plugins.cordova-plugin-arguments -->
+    <clobbers target="Arguments" />
+  </js-module>
+  <platform name="android"><config-file parent="/*" target="res/xml/config.xml">
+    <feature name="cordova-plugin-arguments"><param name="android-package" value="hoyivn_20210118.cordova-plugin-arguments" /></feature>
+    </config-file><config-file parent="/*" target="AndroidManifest.xml"></config-file>
+    <source-file src="src/android/Arguments.java" target-dir="src/hoyivn_20210118/cordova-plugin-arguments" />
+  </platform>
 </plugin>
